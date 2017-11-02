@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card component should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    house={
+        Object {
+            "ancestralWeapons": Array [
+              "Lamentation",
+            ],
+            "cadetBranches": Array [
+              "https://www.anapioficeandfire.com/api/houses/329",
+            ],
+            "coatOfArms": "Black iron studs on a bronze field, bordered with runes.",
+            "currentLord": "https://www.anapioficeandfire.com/api/characters/1131",
+            "diedOut": "",
+            "founded": "Age of Heroes",
+            "founder": "",
+            "heir": "https://www.anapioficeandfire.com/api/characters/116",
+            "name": "House Royce of Runestone",
+            "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+            "region": "The Vale",
+            "seats": Array [
+              "Runestone",
+            ],
+            "swornMembers": Array [
+              "https://www.anapioficeandfire.com/api/characters/116",
+              "https://www.anapioficeandfire.com/api/characters/558",
+              "https://www.anapioficeandfire.com/api/characters/608",
+              "https://www.anapioficeandfire.com/api/characters/648",
+              "https://www.anapioficeandfire.com/api/characters/818",
+              "https://www.anapioficeandfire.com/api/characters/878",
+              "https://www.anapioficeandfire.com/api/characters/892",
+              "https://www.anapioficeandfire.com/api/characters/948",
+              "https://www.anapioficeandfire.com/api/characters/1104",
+              "https://www.anapioficeandfire.com/api/characters/1131",
+              "https://www.anapioficeandfire.com/api/characters/1133",
+              "https://www.anapioficeandfire.com/api/characters/1929",
+            ],
+            "titles": Array [
+              "High King of the Vale, the Fingers and the Mountains of the Moon.",
+              "Lord of Runestone",
+            ],
+            "url": "https://www.anapioficeandfire.com/api/houses/328",
+            "words": "We Remember",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="name"
+>
+          House Royce of Runestone
+</p>,
+        <p
+          className="words"
+>
+          We Remember
+</p>,
+        <p
+          className="founded"
+>
+          Founded: Age of Heroes
+</p>,
+        <p
+          className="seats"
+>
+          Seats: Runestone
+</p>,
+        Array [
+          <p
+            className="title"
+>
+            Title: High King of the Vale, the Fingers and the Mountains of the Moon.
+</p>,
+          <p
+            className="title"
+>
+            Title: Lord of Runestone
+</p>,
+        ],
+        <p
+          className="weapons"
+>
+          Ancestral Weapons: Lamentation
+</p>,
+        <p
+          className="coat"
+>
+          Coat of Arms: Black iron studs on a bronze field, bordered with runes.
+</p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "House Royce of Runestone",
+          "className": "name",
+        },
+        "ref": null,
+        "rendered": "House Royce of Runestone",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "We Remember",
+          "className": "words",
+        },
+        "ref": null,
+        "rendered": "We Remember",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Founded: Age of Heroes",
+          "className": "founded",
+        },
+        "ref": null,
+        "rendered": "Founded: Age of Heroes",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Seats: Runestone",
+          "className": "seats",
+        },
+        "ref": null,
+        "rendered": "Seats: Runestone",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "High King of the Vale, the Fingers and the Mountains of the Moon.",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Title: High King of the Vale, the Fingers and the Mountains of the Moon.",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "Title: High King of the Vale, the Fingers and the Mountains of the Moon.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "Lord of Runestone",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Title: Lord of Runestone",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "Title: Lord of Runestone",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Ancestral Weapons: Lamentation",
+          "className": "weapons",
+        },
+        "ref": null,
+        "rendered": "Ancestral Weapons: Lamentation",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Coat of Arms: Black iron studs on a bronze field, bordered with runes.",
+          "className": "coat",
+        },
+        "ref": null,
+        "rendered": "Coat of Arms: Black iron studs on a bronze field, bordered with runes.",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="name"
+>
+            House Royce of Runestone
+</p>,
+          <p
+            className="words"
+>
+            We Remember
+</p>,
+          <p
+            className="founded"
+>
+            Founded: Age of Heroes
+</p>,
+          <p
+            className="seats"
+>
+            Seats: Runestone
+</p>,
+          Array [
+            <p
+              className="title"
+>
+              Title: High King of the Vale, the Fingers and the Mountains of the Moon.
+</p>,
+            <p
+              className="title"
+>
+              Title: Lord of Runestone
+</p>,
+          ],
+          <p
+            className="weapons"
+>
+            Ancestral Weapons: Lamentation
+</p>,
+          <p
+            className="coat"
+>
+            Coat of Arms: Black iron studs on a bronze field, bordered with runes.
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "House Royce of Runestone",
+            "className": "name",
+          },
+          "ref": null,
+          "rendered": "House Royce of Runestone",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "We Remember",
+            "className": "words",
+          },
+          "ref": null,
+          "rendered": "We Remember",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Founded: Age of Heroes",
+            "className": "founded",
+          },
+          "ref": null,
+          "rendered": "Founded: Age of Heroes",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Seats: Runestone",
+            "className": "seats",
+          },
+          "ref": null,
+          "rendered": "Seats: Runestone",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "High King of the Vale, the Fingers and the Mountains of the Moon.",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Title: High King of the Vale, the Fingers and the Mountains of the Moon.",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "Title: High King of the Vale, the Fingers and the Mountains of the Moon.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "Lord of Runestone",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Title: Lord of Runestone",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "Title: Lord of Runestone",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Ancestral Weapons: Lamentation",
+            "className": "weapons",
+          },
+          "ref": null,
+          "rendered": "Ancestral Weapons: Lamentation",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Coat of Arms: Black iron studs on a bronze field, bordered with runes.",
+            "className": "coat",
+          },
+          "ref": null,
+          "rendered": "Coat of Arms: Black iron studs on a bronze field, bordered with runes.",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

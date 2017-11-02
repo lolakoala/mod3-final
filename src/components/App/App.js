@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { addHouses } from '../../actions';
 import wolf from '../../images/wolf.gif';
 import Card from '../Card/Card.js';
+import fetchHouses from './helper.js';
 
 class App extends Component {
   constructor() {
@@ -17,7 +18,7 @@ class App extends Component {
 
   componentDidMount() {
     const { addHouses } = this.props;
-    fetch('http://localhost:3001/api/v1/houses')
+    fetchHouses()
       .then(res => res.json())
       .then(jsonRes => addHouses(jsonRes))
       .then(() => this.setState({ loading: false }));
