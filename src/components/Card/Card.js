@@ -1,8 +1,34 @@
 import React, { Component } from 'react';
 import PropTypes, { shape } from 'prop-types';
 import './Card.css';
+import fetchSwornMembers from './helper.js';
 
 class Card extends Component {
+  constructor() {
+    super();
+    this.state = {
+      swornMembers: []
+    };
+  }
+  handleClick = () => {
+    const swornMembers = this.state;
+    if (swornMembers.length === this.props.house.swornMembers.length) {
+      this.setState({ swornMembers: [] });
+      return;
+    }
+    this.props.house.swornMembers.map(url => {
+      return fetchSwornMembers(url)
+        .then(res => res.json())
+        .then(res => res.name)
+        .then(name =>
+          this.setState({ swornMembers: [...swornMembers, name] }));
+    });
+  }
+
+  renderSwornMembers = () => {
+    return this.state.swornMembers.map(member => <p key={member}>{member}</p>);
+  }
+
   render() {
     const {
       name,
@@ -11,7 +37,8 @@ class Card extends Component {
       titles,
       coatOfArms,
       ancestralWeapons,
-      words
+      words,
+      swornMembers
     } = this.props.house;
 
     const foundedInfo = founded.length ? founded : 'N/A';
@@ -23,7 +50,7 @@ class Card extends Component {
       : null;
 
     return (
-      <div>
+      <div onClick={this.handleClick}>
         <p className='name'>{name}</p>
         {words.length ? <p className='words'>{words}</p> : null}
         <p className='founded'>{`Founded: ${foundedInfo}`}</p>
@@ -31,6 +58,12 @@ class Card extends Component {
         {titlesInfo}
         <p className='weapons'>{`Ancestral Weapons: ${ancestralWeapons}`}</p>
         <p className='coat'>{`Coat of Arms: ${coatOfArms}`}</p>
+        {this.state.swornMembers.length === swornMembers.length ?
+          <div className='members'>
+            <p>Sworn Members:</p>
+            {this.renderSwornMembers()}
+          </div>
+          : null}
       </div>
     );
   }
