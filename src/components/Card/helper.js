@@ -1,7 +1,10 @@
 const fetchSwornMembers = (url) => {
-  fetch(url, {
+  return fetch('http://localhost:3001/api/v1/character', {
     method: 'POST',
-    body: JSON.stringify({ url: url })
+    body: JSON.stringify({ url: url }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
   });
 };
 
