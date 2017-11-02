@@ -50,7 +50,7 @@ class Card extends Component {
       : null;
 
     return (
-      <div onClick={this.handleClick} className='card'>
+      <div onClick={this.handleClick} className='Card'>
         <p className='name'>{name}</p>
         {words.length ? <p className='words'>{words}</p> : null}
         <p className='founded'>{`Founded: ${foundedInfo}`}</p>

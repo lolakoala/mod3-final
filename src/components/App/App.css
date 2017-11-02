@@ -42,11 +42,11 @@
   padding: 40px;
   font: white;
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Container {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .Card {
@@ -56,5 +56,5 @@
   margin: 10px;
   padding: 5px;
   flex-grow: 1;
-  width: 300px;
+  width: 200px;
 }
