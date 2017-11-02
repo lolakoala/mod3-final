@@ -8,6 +8,8 @@ import wolf from '../../images/wolf.gif';
 import Card from '../Card/Card.js';
 import fetchHouses from './helper.js';
 
+//I have the right number of houses... not sure why all my cards won't render.
+
 class App extends Component {
   constructor() {
     super();
@@ -16,16 +18,16 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount = async () => {
     const { addHouses } = this.props;
-    fetchHouses()
+    await fetchHouses()
       .then(res => res.json())
       .then(jsonRes => addHouses(jsonRes))
-      .then(() => this.setState({ loading: false }));
+      .then(() => this.setState({ houses: this.props.houses, loading: false }));
   }
 
   renderHouses = () => {
-    const { houses } = this.props;
+    const { houses } = this.state;
     return houses.map(house => {
       //I could not get all cards to load without having
       //this console log for a time buffer. it would only load 3-4 of them.
