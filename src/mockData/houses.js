@@ -534,3 +534,5 @@ const houses = [
     ]
   }
 ];
+
+export default houses;
