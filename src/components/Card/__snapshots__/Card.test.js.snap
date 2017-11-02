@@ -103,7 +103,9 @@ ShallowWrapper {
 >
           Coat of Arms: Black iron studs on a bronze field, bordered with runes.
 </p>,
+        null,
       ],
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -203,6 +205,7 @@ ShallowWrapper {
         "rendered": "Coat of Arms: Black iron studs on a bronze field, bordered with runes.",
         "type": "p",
       },
+      null,
     ],
     "type": "div",
   },
@@ -255,7 +258,9 @@ ShallowWrapper {
 >
             Coat of Arms: Black iron studs on a bronze field, bordered with runes.
 </p>,
+          null,
         ],
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -355,6 +360,7 @@ ShallowWrapper {
           "rendered": "Coat of Arms: Black iron studs on a bronze field, bordered with runes.",
           "type": "p",
         },
+        null,
       ],
       "type": "div",
     },

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string, array } from 'prop-types';
+import { func, array } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape } from 'prop-types';
+import { shape } from 'prop-types';
 import './Card.css';
 import fetchSwornMembers from './helper.js';
 
@@ -11,18 +11,18 @@ class Card extends Component {
     };
   }
   handleClick = () => {
-    const swornMembers = this.state;
-    if (swornMembers.length === this.props.house.swornMembers.length) {
+    const { swornMembers } = this.state;
+    if (swornMembers.length >= 1) {
       this.setState({ swornMembers: [] });
       return;
     }
-    this.props.house.swornMembers.map(url => {
+    const members = this.props.house.swornMembers.map(url => {
       return fetchSwornMembers(url)
         .then(res => res.json())
-        .then(res => res.name)
-        .then(name =>
-          this.setState({ swornMembers: [...swornMembers, name] }));
+        .then(res => res.name);
     });
+    Promise.all(members)
+      .then(res => this.setState({ swornMembers: res }));
   }
 
   renderSwornMembers = () => {
@@ -50,7 +50,7 @@ class Card extends Component {
       : null;
 
     return (
-      <div onClick={this.handleClick}>
+      <div onClick={this.handleClick} className='card'>
         <p className='name'>{name}</p>
         {words.length ? <p className='words'>{words}</p> : null}
         <p className='founded'>{`Founded: ${foundedInfo}`}</p>
